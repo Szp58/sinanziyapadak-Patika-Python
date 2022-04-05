@@ -6,7 +6,8 @@ Patika-Python Project
                output: [1,'a','cat',2,3,'dog',4,5]
   
 Cevap:
-            flatten_list=[]
+            
+            flatten_list=[]            
             def flatten (liste):
                 for e in liste:
                     if type(e)==list:
@@ -26,6 +27,7 @@ input: [[1, 2], [3, 4], [5, 6, 7]]
 output: [[[7, 6, 5], [4, 3], [2, 1]]
 
 Cevap:
+
             def reversing (liste):
                 liste.reverse()
                 for e in liste:
@@ -33,9 +35,6 @@ Cevap:
                         reversing(e)
                     else:
                         continue
-
-
-
                 return liste
 
             inputs=[[[1, 2], [3, 4]], [5, 6, 7]]
